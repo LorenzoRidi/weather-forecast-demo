@@ -27,7 +27,6 @@ public class WeatherForecastApplication {
 	private String weatherApiKey;
 
 	@RequestMapping("/get")
-	
 	@ResponseBody
 	public String getForecast(@RequestParam(name = "city", required = true) String city) {
 		return callAndParse("http://api.openweathermap.org/data/2.5/weather?appid=" + weatherApiKey + "&q=" + city).toString();
@@ -36,7 +35,6 @@ public class WeatherForecastApplication {
 	private JsonElement callAndParse(String endpoint) {
 		URL url;
 		try {
-			// TODO: extract API key to generalise demo
 			url = new URL(endpoint);
 			HttpURLConnection con = (HttpURLConnection) url.openConnection();
 			con.setRequestMethod("GET");

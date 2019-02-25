@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - WeatherForecastApplication",
+            "request": "launch",
+            "mainClass": "com.example.weatherforecastdemo.WeatherForecastApplication",
+            "projectName": "weather-forecast-demo"
+        }
+    ]
+}
